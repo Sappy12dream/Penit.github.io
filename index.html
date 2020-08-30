@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+<title>Pen it!</title> 
+
+<!--Font awesome CDN--
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> Scroll reveal CDN-->
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body> 
+    <!--header starts from here-->
+    <header>
+           <div class= "navbar">
+               <div class= "logo">
+                   <h1>Pen<span>it<span class = "down">!</span></span></h1>               
+               </div>               
+               <div class="btns">                  
+                   <input type="text" class="search" placeholder="search here..." />
+               </div>
+           </div>
+    </header>
+    <!--form-body starts from here-->
+    <section>
+            <div class="addnote-body">
+                <div class="col-1" >
+                    <div class="form-body">
+                        <h3>Create a note</h3>
+                        <form>
+                            <label><h4>title </h4></label><br>                            
+                            <input type="text" class="inputTitle" placeholder="type here..." />
+                            <label><h4>note</h4> </label><br> 
+                            <textarea class="inputText" placeholder="type here..."></textarea>
+                            <button class="btn addBtn">Add</button>
+                        <form>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="wrapper quoteGenerator">
+                        <div class="quote-body">
+                            <span class="quote">"Dream as Diva of Delight"</span><br>
+                            <span class="author">-sappy12dream</span><br>
+                            <button class="btn next">Next</button>
+                        </div>                    
+                    </div>
+                    <div class="wrapper imageSlider">
+                        <img src="" name="slide" width="430px" height="242px">     
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--note-container starts from here-->
+    <section>
+            <div class="container-body">
+                <h1>notes</h1>
+                <div class="noteContainer">
+                </div>                     
+            </div>
+    </section>
+<script src="app.js"></script>
+</body>
+</html>
+
+<!--designed and created by sapp12dream-->
+
+
+

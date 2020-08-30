@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+/*---------------------root styles----------------------*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+
+body{
+  background: #d0dbf3;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------header styles----------------------*/
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.3rem;
+  z-index: 2;
+}
+
+.navbar{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background: #231e3e;
+  border-radius: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logo{
+  flex: 1;
+  margin-left: .8rem;
+}
+
+.logo h1{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #fff;
+  letter-spacing: .2px;
+}
+
+h1>span{
+  background:  #6a0dad;
+  margin-left: .2rem;
+  padding: 0 .3rem;
+  border-radius: .2rem;
+  text-transform: lowercase;
+  box-shadow: 2px 2px #a7a6ba;
+}
+h1>span>.down{
+  margin-left: .2rem;
+}
+
+.btns{
+  margin-right: 2rem;
+}
+
+.btns>.search{
+  padding: .2rem;
+}
+
+
+/*---------------------form-body styles----------------------*/
+
+.addnote-body{
+  width: 80%;
+  height: 500px;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .2rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.col-1{
+  width: 60%;
+  height: 100%;
+  background:  #231e3e;
+  border-radius: .3rem;
+}
+
+.col-1{
+  padding: 3rem;
+  position: relative;
+}
+
+.form-body{
+  display: flex; 
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.form-body>h3{
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: .6rem;
+}
+
+label{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input{
+
+  width: 100%;
+  background: none;
+  border: 1px solid #9c9cba;
+  border-radius: .2rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  
+}
+
+textarea{
+  width: 100%;
+  height: 200px;
+  background: none;
+  border: 1px solid #9c9cba;
+  border-radius: .2rem;
+  padding: .5rem;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+.addBtn{
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+}
+
+.btn{
+  background: #6a0dad;
+  border: none;
+  padding: .4rem 1.5rem;
+  border-radius: .2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0px 2px 3px 0 rgba(0,0,0,.5);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn:hover,.btn:focus{
+  background: #d0dbf3;
+  color: #000;
+
+  transform: scale(1.1);
+}
+
+
+/*---------------------quote-body styles----------------------*/
+
+
+.col-2{ 
+  width: 40%;
+  height: 100%;
+  background: #d0dbf3;
+  display: flex;
+  flex-direction: column; 
+}
+
+.wrapper{
+  width: 100%;
+  height: 50%;
+  margin-left: .5rem;
+  border-radius: .3rem;
+}
+
+
+.quoteGenerator{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.quote-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #9c9cba;
+  margin: 2rem;
+  border-radius: .3rem;
+  padding: .5rem
+  
+}
+.quote{
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: .2px;
+  text-align: center;
+  margin-bottom: .2rem;
+  
+}
+.author{
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: .2px;
+  margin-bottom: 1rem; 
+}
+
+.next{
+  background:  #231e3e;
+  transition: .3s;
+}
+
+.next:hover{
+  background: #d0dbf3;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.next:active{
+ background:  #231e3e;
+}
+
+/*---------------------img-slider styles----------------------*/
+
+
+.imageSlider{
+  margin-top: .5rem;
+}
+
+.imageSlider img{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: .3rem;
+}
+
+
+/*---------------------note-conatiner-body styles----------------------*/
+
+
+.container-body{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 1rem;
+
+}
+
+.container-body>h1{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-bottom: 4px solid #6a0dad;
+}
+.noteContainer{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noteCard{
+  margin: 10px;
+  width: 330px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: .3rem;
+  box-shadow: 2px 4px 12px rgba(0,0,0,.2);
+
+}
+
+.btnss{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.noteCard.appear{
+  animation: appear 1s ;
+}
+
+.noteCard>h1{
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+  color: #000;
+}
+.noteCard>hr{
+  color: #9c9cba;
+  margin-bottom: .8rem;
+}
+
+.noteCard>p{
+  font-size: 1rem;
+  margin-bottom: .8rem;
+  color: #000;
+  
+}
+
+.delBtn{
+  background: #fff;
+  border: 1px solid #6a0dad;
+  color: #000;
+  margin-left: .5rem;
+}
+
+
+.delBtn:hover{
+  background: #6a0dad;
+  color: #fff;
+  
+}
+
+.date{
+  font-size: 12px;
+  color: #000;
+  font-style: italic;
+  padding: 10px 10px 0 0;
+}
+
+
+
+/*-----animations------*/
+
+
+@keyframes appear{
+
+  0%{ 
+      opacity: 0;
+  }
+  100%{
+        opacity: 1;
+  }
+}
+
+
+
+/*------responsive------*/
+
+@media screen and (max-width: 428px){
+
+header{
+  height: 2.5rem; 
+}
+.navbar{
+  width: 100%; 
+  border-radius: 0;
+  justify-content: space-around; 
+}
+
+.logo{
+  flex: 0;
+  margin-left:0rem;
+}
+
+.logo h1{
+  font-size: 1.6rem; 
+}
+
+.btns{
+  margin-right: 0rem 
+}
+
+
+.btns>.search{
+  padding: .1rem; 
+}
+
+/*header ends here*/
+
+.addnote-body{
+  width: 100%; 
+  margin: 3rem 0;
+  display: block;
+}
+
+
+.col-1{
+  width: 100%; 
+  height: 300px;
+}
+
+.col-1{
+  padding: 1rem; 
+}
+
+.form-body>h3{
+  font-size: 1rem; 
+  margin-bottom: .2rem; 
+}
+
+label{
+  color: #fff;
+  font-size: .8rem; 
+}
+
+input{
+  padding: .3rem; 
+  margin-bottom: .5rem; 
+  font-size: .8rem; 
+}
+
+textarea{
+  height: 100px; 
+  padding: .3rem; 
+  font-size: .8rem; 
+}
+
+.addBtn{
+  right: 1rem; 
+  bottom: 1rem; 
+
+}
+
+.btn{
+  padding: .2rem .6rem; 
+  border-radius: .2rem;
+  font-size: .8rem; 
+}
+
+.col-2{ 
+  width: 100%;
+}
+
+.quoteGenerator{
+  margin: .8rem 0 0 0; 
+  height: 150px; 
+}
+
+.quote-body{
+  padding: .3rem 4rem; 
+
+}
+.quote{
+  font-size: 1rem; 
+  letter-spacing: 0px; 
+}
+.author{
+  font-size: .6rem; 
+  letter-spacing: 0px; 
+  margin-bottom: .2rem; 
+}
+
+.imageSlider{
+  display: none;
+}
+.container-body{
+  width: 100%; 
+  margin-top: -4rem;
+}
+
+.container-body>h1{
+  width: 80%;
+}
+
+.noteContainer{ 
+  display: block;
+  margin: 1rem;
+}
+
+}
+
+/*---------------------designed and developed by sappy12dream----------------------*/
